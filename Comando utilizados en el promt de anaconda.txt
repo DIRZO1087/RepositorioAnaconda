@@ -1,0 +1,409 @@
+(ProyectoFinal) C:\Users\ingjo>git --version
+git version 2.51.0.windows.1
+
+(ProyectoFinal) C:\Users\ingjo>git clone https://github.com/DIRZO1087/RepositorioAnaconda.git
+Cloning into 'RepositorioAnaconda'...
+warning: You appear to have cloned an empty repository.
+
+(ProyectoFinal) C:\Users\ingjo>cd .docker
+
+(ProyectoFinal) C:\Users\ingjo\.docker>cd..
+
+(ProyectoFinal) C:\Users\ingjo>cd Documents
+
+(ProyectoFinal) C:\Users\ingjo\Documents>cd "Curso Propedeutico Maestría"
+
+(ProyectoFinal) C:\Users\ingjo\Documents\Curso Propedeutico Maestría>cd Anaconda
+
+(ProyectoFinal) C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda>git clone https://github.com/DIRZO1087/RepositorioAnaconda.git
+Cloning into 'RepositorioAnaconda'...
+warning: You appear to have cloned an empty repository.
+
+(ProyectoFinal) C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda>cd RepositorioAnaconda
+
+(ProyectoFinal) C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda>git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+(ProyectoFinal) C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda>conda env export> ProyectoFinal.yml
+
+(ProyectoFinal) C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda>git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ProyectoFinal.yml
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+(ProyectoFinal) C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda>conda env list
+# conda environments:
+#
+base                     C:\Users\ingjo\anaconda3
+Numpy                    C:\Users\ingjo\anaconda3\envs\Numpy
+ProyectoFinal         *  C:\Users\ingjo\anaconda3\envs\ProyectoFinal
+
+
+(ProyectoFinal) C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda>git add ProyectoFinal.yml
+
+(ProyectoFinal) C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda>git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   ProyectoFinal.yml
+
+
+(ProyectoFinal) C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda>git commit -m "Se carga el .yml del enviroment de conda"
+[main (root-commit) 4590254] Se carga el .yml del enviroment de conda
+ 1 file changed, 172 insertions(+)
+ create mode 100644 ProyectoFinal.yml
+
+(ProyectoFinal) C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda>git push
+Username for 'https://github.com':
+(ProyectoFinal) C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda>git config --global user.email "ingjoseluisdirzo@hotmail.com"
+
+(ProyectoFinal) C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda>git config --global user.name "Jose Luis Dirzo"
+
+(ProyectoFinal) C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda>git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 2.18 KiB | 1.09 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/DIRZO1087/RepositorioAnaconda.git
+ * [new branch]      main -> main
+
+(ProyectoFinal) C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda>conda deactivate
+
+C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda>conda activate base
+
+(base) C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda>conda remove -n ProyectoFinal --all
+
+Remove all packages in environment C:\Users\ingjo\anaconda3\envs\ProyectoFinal:
+
+
+## Package Plan ##
+
+  environment location: C:\Users\ingjo\anaconda3\envs\ProyectoFinal
+
+
+The following packages will be REMOVED:
+
+  anyio-4.2.0-py38haa95532_0
+  argon2-cffi-21.3.0-pyhd3eb1b0_0
+  argon2-cffi-bindings-21.2.0-py38h2bbff1b_0
+  asttokens-2.0.5-pyhd3eb1b0_0
+  async-lru-2.0.4-py38haa95532_0
+  attrs-24.2.0-py38haa95532_0
+  babel-2.11.0-py38haa95532_0
+  backcall-0.2.0-pyhd3eb1b0_1
+  beautifulsoup4-4.12.3-py38haa95532_0
+  blas-1.0-mkl
+  bleach-4.1.0-pyhd3eb1b0_0
+  bottleneck-1.3.7-py38h9128911_0
+  brotli-python-1.0.9-py38hd77b12b_8
+  ca-certificates-2025.11.4-haa95532_0
+  certifi-2024.8.30-py38haa95532_0
+  cffi-1.17.1-py38h827c3e9_0
+  charset-normalizer-3.3.2-pyhd3eb1b0_0
+  colorama-0.4.6-py38haa95532_0
+  comm-0.2.1-py38haa95532_0
+  debugpy-1.6.7-py38hd77b12b_0
+  decorator-5.1.1-pyhd3eb1b0_0
+  defusedxml-0.7.1-pyhd3eb1b0_0
+  exceptiongroup-1.2.0-py38haa95532_0
+  executing-0.8.3-pyhd3eb1b0_0
+  git-2.51.0-haa95532_1
+  h11-0.14.0-py38haa95532_0
+  httpcore-1.0.2-py38haa95532_0
+  httpx-0.27.0-py38haa95532_0
+  idna-3.7-py38haa95532_0
+  importlib-metadata-7.0.1-py38haa95532_0
+  importlib_metadata-7.0.1-hd3eb1b0_0
+  importlib_resources-6.4.0-py38haa95532_0
+  intel-openmp-2023.1.0-h59b6b97_46320
+  ipykernel-6.29.5-py38haa95532_0
+  ipython-8.12.2-py38haa95532_0
+  jedi-0.19.1-py38haa95532_0
+  jinja2-3.1.4-py38haa95532_0
+  json5-0.9.6-pyhd3eb1b0_0
+  jsonschema-4.23.0-py38haa95532_0
+  jsonschema-specifications-2023.7.1-py38haa95532_0
+  jupyter-lsp-2.2.0-py38haa95532_0
+  jupyter_client-8.6.0-py38haa95532_0
+  jupyter_core-5.7.2-py38haa95532_0
+  jupyter_events-0.10.0-py38haa95532_0
+  jupyter_server-2.14.1-py38haa95532_0
+  jupyter_server_terminals-0.4.4-py38haa95532_1
+  jupyterlab-4.2.5-py38haa95532_0
+  jupyterlab_pygments-0.1.2-py_0
+  jupyterlab_server-2.27.3-py38haa95532_0
+  libffi-3.4.4-hd77b12b_1
+  libsodium-1.0.20-h83e8143_0
+  markupsafe-2.1.3-py38h2bbff1b_0
+  matplotlib-inline-0.1.6-py38haa95532_0
+  mistune-2.0.4-py38haa95532_0
+  mkl-2023.1.0-h6b88ed4_46358
+  mkl-service-2.4.0-py38h2bbff1b_1
+  mkl_fft-1.3.8-py38h2bbff1b_0
+  mkl_random-1.2.4-py38h59b6b97_0
+  nbclient-0.8.0-py38haa95532_0
+  nbconvert-7.16.4-py38haa95532_0
+  nbformat-5.10.4-py38haa95532_0
+  nest-asyncio-1.6.0-py38haa95532_0
+  notebook-7.2.2-py38haa95532_1
+  notebook-shim-0.2.3-py38haa95532_0
+  numexpr-2.8.4-py38h7b80656_1
+  numpy-1.24.3-py38h79a8e48_1
+  numpy-base-1.24.3-py38h8a87ada_1
+  openssl-3.0.18-h543e019_0
+  overrides-7.4.0-py38haa95532_0
+  packaging-24.1-py38haa95532_0
+  pandas-2.0.3-py38h4ed8f06_0
+  pandocfilters-1.5.0-pyhd3eb1b0_0
+  parso-0.8.3-pyhd3eb1b0_0
+  pickleshare-0.7.5-pyhd3eb1b0_1003
+  pip-24.2-py38haa95532_0
+  pkgutil-resolve-name-1.3.10-py38haa95532_1
+  platformdirs-3.10.0-py38haa95532_0
+  prometheus_client-0.14.1-py38haa95532_0
+  prompt-toolkit-3.0.43-py38haa95532_0
+  psutil-5.9.0-py38h2bbff1b_0
+  pure_eval-0.2.2-pyhd3eb1b0_0
+  pycparser-2.21-pyhd3eb1b0_0
+  pygments-2.15.1-py38haa95532_1
+  pysocks-1.7.1-py38haa95532_0
+  python-3.8.20-h8205438_0
+  python-dateutil-2.9.0post0-py38haa95532_2
+  python-fastjsonschema-2.16.2-py38haa95532_0
+  python-json-logger-2.0.7-py38haa95532_0
+  python-tzdata-2025.2-pyhd3eb1b0_0
+  pytz-2024.1-py38haa95532_0
+  pywin32-305-py38h2bbff1b_0
+  pywinpty-2.0.10-py38h5da7b33_0
+  pyyaml-6.0.2-py38h827c3e9_0
+  pyzmq-25.1.2-py38hd77b12b_0
+  referencing-0.30.2-py38haa95532_0
+  requests-2.32.3-py38haa95532_0
+  rfc3339-validator-0.1.4-py38haa95532_0
+  rfc3986-validator-0.1.1-py38haa95532_0
+  rpds-py-0.10.6-py38h062c2fa_0
+  send2trash-1.8.2-py38haa95532_0
+  setuptools-75.1.0-py38haa95532_0
+  six-1.16.0-pyhd3eb1b0_1
+  sniffio-1.3.0-py38haa95532_0
+  soupsieve-2.5-py38haa95532_0
+  sqlite-3.51.0-hda9a48d_0
+  stack_data-0.2.0-pyhd3eb1b0_0
+  tbb-2021.8.0-h59b6b97_0
+  terminado-0.17.1-py38haa95532_0
+  tinycss2-1.2.1-py38haa95532_0
+  tomli-2.0.1-py38haa95532_0
+  tornado-6.4.1-py38h827c3e9_0
+  traitlets-5.14.3-py38haa95532_0
+  typing-extensions-4.11.0-py38haa95532_0
+  ucrt-10.0.22621.0-haa95532_0
+  urllib3-2.2.3-py38haa95532_0
+  vc-14.3-h2df5915_10
+  vc14_runtime-14.44.35208-h4927774_10
+  vs2015_runtime-14.44.35208-ha6b5a95_10
+  wcwidth-0.2.5-pyhd3eb1b0_0
+  webencodings-0.5.1-py38_1
+  websocket-client-1.8.0-py38haa95532_0
+  wheel-0.44.0-py38haa95532_0
+  win_inet_pton-1.1.0-py38haa95532_0
+  winpty-0.4.3-4
+  yaml-0.2.5-he774522_0
+  zeromq-4.3.5-h6c54ac7_1
+  zipp-3.20.2-py38haa95532_0
+
+
+Proceed ([y]/n)? y
+
+Preparing transaction: done
+Executing transaction: done
+Everything found within the environment (C:\Users\ingjo\anaconda3\envs\ProyectoFinal), including any conda environment configurations and any non-conda files, will be deleted. Do you wish to continue?
+ (y/[n])? y
+
+WARNING conda.gateways.disk.delete:unlink_or_rename_to_trash(182): Could not remove or rename C:\Users\ingjo\anaconda3\envs\ProyectoFinal\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.  Please remove this file manually (you may need to reboot to free file handles)
+
+(base) C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda>conda env create -f ProyectoFinal.yml
+Retrieving notices: ...working... done
+Channels:
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+Downloading and Extracting Packages:
+
+Preparing transaction: done
+Executing transaction: done
+Installing pip dependencies: \ Ran pip subprocess with arguments:
+['C:\\Users\\ingjo\\anaconda3\\envs\\ProyectoFinal\\python.exe', '-m', 'pip', 'install', '-U', '-r', 'C:\\Users\\ingjo\\Documents\\Curso Propedeutico Maestría\\Anaconda\\RepositorioAnaconda\\condaenv.20jn9mdf.requirements.txt', '--exists-action=b']
+Pip subprocess output:
+Collecting absl-py==2.3.1 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 1))
+  Using cached absl_py-2.3.1-py3-none-any.whl.metadata (3.3 kB)
+Collecting astunparse==1.6.3 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 2))
+  Using cached astunparse-1.6.3-py2.py3-none-any.whl.metadata (4.4 kB)
+Collecting cachetools==5.5.2 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 3))
+  Using cached cachetools-5.5.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting contourpy==1.1.1 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 4))
+  Using cached contourpy-1.1.1-cp38-cp38-win_amd64.whl.metadata (5.9 kB)
+Collecting cycler==0.12.1 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 5))
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting flatbuffers==25.9.23 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 6))
+  Using cached flatbuffers-25.9.23-py2.py3-none-any.whl.metadata (875 bytes)
+Collecting fonttools==4.57.0 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 7))
+  Using cached fonttools-4.57.0-cp38-cp38-win_amd64.whl.metadata (104 kB)
+Collecting gast==0.4.0 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 8))
+  Using cached gast-0.4.0-py3-none-any.whl.metadata (1.1 kB)
+Collecting google-auth==2.43.0 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 9))
+  Using cached google_auth-2.43.0-py2.py3-none-any.whl.metadata (6.6 kB)
+Collecting google-auth-oauthlib==1.0.0 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 10))
+  Using cached google_auth_oauthlib-1.0.0-py2.py3-none-any.whl.metadata (2.7 kB)
+Collecting google-pasta==0.2.0 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 11))
+  Using cached google_pasta-0.2.0-py3-none-any.whl.metadata (814 bytes)
+Collecting grpcio==1.70.0 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 12))
+  Using cached grpcio-1.70.0-cp38-cp38-win_amd64.whl.metadata (4.0 kB)
+Collecting h5py==3.11.0 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 13))
+  Using cached h5py-3.11.0-cp38-cp38-win_amd64.whl.metadata (2.5 kB)
+Collecting keras==2.13.1 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 14))
+  Using cached keras-2.13.1-py3-none-any.whl.metadata (2.4 kB)
+Collecting kiwisolver==1.4.7 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 15))
+  Using cached kiwisolver-1.4.7-cp38-cp38-win_amd64.whl.metadata (6.4 kB)
+Collecting libclang==18.1.1 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 16))
+  Using cached libclang-18.1.1-py2.py3-none-win_amd64.whl.metadata (5.3 kB)
+Collecting markdown==3.7 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 17))
+  Using cached Markdown-3.7-py3-none-any.whl.metadata (7.0 kB)
+Collecting matplotlib==3.7.5 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 18))
+  Using cached matplotlib-3.7.5-cp38-cp38-win_amd64.whl.metadata (5.8 kB)
+Collecting oauthlib==3.3.1 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 19))
+  Using cached oauthlib-3.3.1-py3-none-any.whl.metadata (7.9 kB)
+Collecting opt-einsum==3.4.0 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 20))
+  Using cached opt_einsum-3.4.0-py3-none-any.whl.metadata (6.3 kB)
+Collecting pillow==10.4.0 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 21))
+  Using cached pillow-10.4.0-cp38-cp38-win_amd64.whl.metadata (9.3 kB)
+Collecting protobuf==4.25.8 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 22))
+  Using cached protobuf-4.25.8-cp38-cp38-win_amd64.whl.metadata (541 bytes)
+Collecting pyasn1==0.6.1 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 23))
+  Using cached pyasn1-0.6.1-py3-none-any.whl.metadata (8.4 kB)
+Collecting pyasn1-modules==0.4.2 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 24))
+  Using cached pyasn1_modules-0.4.2-py3-none-any.whl.metadata (3.5 kB)
+Collecting pyparsing==3.1.4 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 25))
+  Using cached pyparsing-3.1.4-py3-none-any.whl.metadata (5.1 kB)
+Collecting requests-oauthlib==2.0.0 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 26))
+  Using cached requests_oauthlib-2.0.0-py2.py3-none-any.whl.metadata (11 kB)
+Collecting rsa==4.9.1 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 27))
+  Using cached rsa-4.9.1-py3-none-any.whl.metadata (5.6 kB)
+Collecting tensorboard==2.13.0 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 28))
+  Using cached tensorboard-2.13.0-py3-none-any.whl.metadata (1.8 kB)
+Collecting tensorboard-data-server==0.7.2 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 29))
+  Using cached tensorboard_data_server-0.7.2-py3-none-any.whl.metadata (1.1 kB)
+Collecting tensorflow==2.13.0 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 30))
+  Using cached tensorflow-2.13.0-cp38-cp38-win_amd64.whl.metadata (2.6 kB)
+Collecting tensorflow-estimator==2.13.0 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 31))
+  Using cached tensorflow_estimator-2.13.0-py2.py3-none-any.whl.metadata (1.3 kB)
+Collecting tensorflow-intel==2.13.0 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 32))
+  Using cached tensorflow_intel-2.13.0-cp38-cp38-win_amd64.whl.metadata (4.1 kB)
+Collecting tensorflow-io-gcs-filesystem==0.31.0 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 33))
+  Using cached tensorflow_io_gcs_filesystem-0.31.0-cp38-cp38-win_amd64.whl.metadata (14 kB)
+Collecting termcolor==2.4.0 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 34))
+  Using cached termcolor-2.4.0-py3-none-any.whl.metadata (6.1 kB)
+Collecting typing-extensions==4.5.0 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 35))
+  Using cached typing_extensions-4.5.0-py3-none-any.whl.metadata (8.5 kB)
+Collecting werkzeug==3.0.6 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 36))
+  Using cached werkzeug-3.0.6-py3-none-any.whl.metadata (3.7 kB)
+Collecting wrapt==2.0.1 (from -r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 37))
+  Using cached wrapt-2.0.1-cp38-cp38-win_amd64.whl.metadata (9.2 kB)
+Requirement already satisfied: wheel<1.0,>=0.23.0 in c:\users\ingjo\anaconda3\envs\proyectofinal\lib\site-packages (from astunparse==1.6.3->-r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 2)) (0.44.0)
+Requirement already satisfied: six<2.0,>=1.6.1 in c:\users\ingjo\anaconda3\envs\proyectofinal\lib\site-packages (from astunparse==1.6.3->-r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 2)) (1.16.0)
+Requirement already satisfied: numpy<2.0,>=1.16 in c:\users\ingjo\anaconda3\envs\proyectofinal\lib\site-packages (from contourpy==1.1.1->-r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 4)) (1.24.3)
+Requirement already satisfied: importlib-metadata>=4.4 in c:\users\ingjo\anaconda3\envs\proyectofinal\lib\site-packages (from markdown==3.7->-r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 17)) (7.0.1)
+Requirement already satisfied: packaging>=20.0 in c:\users\ingjo\anaconda3\envs\proyectofinal\lib\site-packages (from matplotlib==3.7.5->-r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 18)) (24.1)
+Requirement already satisfied: python-dateutil>=2.7 in c:\users\ingjo\anaconda3\envs\proyectofinal\lib\site-packages (from matplotlib==3.7.5->-r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 18)) (2.9.0.post0)
+Requirement already satisfied: importlib-resources>=3.2.0 in c:\users\ingjo\anaconda3\envs\proyectofinal\lib\site-packages (from matplotlib==3.7.5->-r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 18)) (6.4.0)
+Requirement already satisfied: requests>=2.0.0 in c:\users\ingjo\anaconda3\envs\proyectofinal\lib\site-packages (from requests-oauthlib==2.0.0->-r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 26)) (2.32.3)
+Requirement already satisfied: setuptools>=41.0.0 in c:\users\ingjo\anaconda3\envs\proyectofinal\lib\site-packages (from tensorboard==2.13.0->-r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 28)) (75.1.0)
+Requirement already satisfied: MarkupSafe>=2.1.1 in c:\users\ingjo\anaconda3\envs\proyectofinal\lib\site-packages (from werkzeug==3.0.6->-r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 36)) (2.1.3)
+Requirement already satisfied: zipp>=0.5 in c:\users\ingjo\anaconda3\envs\proyectofinal\lib\site-packages (from importlib-metadata>=4.4->markdown==3.7->-r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 17)) (3.20.2)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\ingjo\anaconda3\envs\proyectofinal\lib\site-packages (from requests>=2.0.0->requests-oauthlib==2.0.0->-r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 26)) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\ingjo\anaconda3\envs\proyectofinal\lib\site-packages (from requests>=2.0.0->requests-oauthlib==2.0.0->-r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 26)) (3.7)
+Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\ingjo\anaconda3\envs\proyectofinal\lib\site-packages (from requests>=2.0.0->requests-oauthlib==2.0.0->-r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 26)) (2.2.3)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\ingjo\anaconda3\envs\proyectofinal\lib\site-packages (from requests>=2.0.0->requests-oauthlib==2.0.0->-r C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda\condaenv.20jn9mdf.requirements.txt (line 26)) (2024.8.30)
+Using cached absl_py-2.3.1-py3-none-any.whl (135 kB)
+Using cached astunparse-1.6.3-py2.py3-none-any.whl (12 kB)
+Using cached cachetools-5.5.2-py3-none-any.whl (10 kB)
+Using cached contourpy-1.1.1-cp38-cp38-win_amd64.whl (477 kB)
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Using cached flatbuffers-25.9.23-py2.py3-none-any.whl (30 kB)
+Using cached fonttools-4.57.0-cp38-cp38-win_amd64.whl (1.5 MB)
+Using cached gast-0.4.0-py3-none-any.whl (9.8 kB)
+Using cached google_auth-2.43.0-py2.py3-none-any.whl (223 kB)
+Using cached google_auth_oauthlib-1.0.0-py2.py3-none-any.whl (18 kB)
+Using cached google_pasta-0.2.0-py3-none-any.whl (57 kB)
+Using cached grpcio-1.70.0-cp38-cp38-win_amd64.whl (4.3 MB)
+Using cached h5py-3.11.0-cp38-cp38-win_amd64.whl (3.0 MB)
+Using cached keras-2.13.1-py3-none-any.whl (1.7 MB)
+Using cached kiwisolver-1.4.7-cp38-cp38-win_amd64.whl (55 kB)
+Using cached libclang-18.1.1-py2.py3-none-win_amd64.whl (26.4 MB)
+Using cached Markdown-3.7-py3-none-any.whl (106 kB)
+Using cached matplotlib-3.7.5-cp38-cp38-win_amd64.whl (7.5 MB)
+Using cached oauthlib-3.3.1-py3-none-any.whl (160 kB)
+Using cached opt_einsum-3.4.0-py3-none-any.whl (71 kB)
+Using cached pillow-10.4.0-cp38-cp38-win_amd64.whl (2.6 MB)
+Using cached protobuf-4.25.8-cp38-cp38-win_amd64.whl (413 kB)
+Using cached pyasn1-0.6.1-py3-none-any.whl (83 kB)
+Using cached pyasn1_modules-0.4.2-py3-none-any.whl (181 kB)
+Using cached pyparsing-3.1.4-py3-none-any.whl (104 kB)
+Using cached requests_oauthlib-2.0.0-py2.py3-none-any.whl (24 kB)
+Using cached rsa-4.9.1-py3-none-any.whl (34 kB)
+Using cached tensorboard-2.13.0-py3-none-any.whl (5.6 MB)
+Using cached tensorboard_data_server-0.7.2-py3-none-any.whl (2.4 kB)
+Using cached tensorflow-2.13.0-cp38-cp38-win_amd64.whl (1.9 kB)
+Using cached tensorflow_estimator-2.13.0-py2.py3-none-any.whl (440 kB)
+Using cached tensorflow_intel-2.13.0-cp38-cp38-win_amd64.whl (276.5 MB)
+Using cached tensorflow_io_gcs_filesystem-0.31.0-cp38-cp38-win_amd64.whl (1.5 MB)
+Using cached termcolor-2.4.0-py3-none-any.whl (7.7 kB)
+Using cached typing_extensions-4.5.0-py3-none-any.whl (27 kB)
+Using cached werkzeug-3.0.6-py3-none-any.whl (227 kB)
+Using cached wrapt-2.0.1-cp38-cp38-win_amd64.whl (60 kB)
+Installing collected packages: libclang, flatbuffers, wrapt, werkzeug, typing-extensions, termcolor, tensorflow-io-gcs-filesystem, tensorflow-estimator, tensorboard-data-server, pyparsing, pyasn1, protobuf, pillow, opt-einsum, oauthlib, kiwisolver, keras, h5py, grpcio, google-pasta, gast, fonttools, cycler, contourpy, cachetools, astunparse, absl-py, rsa, requests-oauthlib, pyasn1-modules, matplotlib, markdown, google-auth, google-auth-oauthlib, tensorboard, tensorflow-intel, tensorflow
+  Attempting uninstall: typing-extensions
+    Found existing installation: typing_extensions 4.11.0
+    Uninstalling typing_extensions-4.11.0:
+      Successfully uninstalled typing_extensions-4.11.0
+
+Pip subprocess error:
+ERROR: Could not install packages due to an OSError: [WinError 32] El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso: 'C:\\Users\\ingjo\\anaconda3\\envs\\ProyectoFinal\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+Consider using the `--user` option or check the permissions.
+
+
+failed
+
+CondaEnvException: Pip failed
+
+
+(base) C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda>conda env create -f ProyectoFinal.yml
+
+CondaValueError: prefix already exists: C:\Users\ingjo\anaconda3\envs\ProyectoFinal
+
+
+(base) C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda>conda env list
+# conda environments:
+#
+base                  *  C:\Users\ingjo\anaconda3
+Numpy                    C:\Users\ingjo\anaconda3\envs\Numpy
+ProyectoFinal            C:\Users\ingjo\anaconda3\envs\ProyectoFinal
+
+
+(base) C:\Users\ingjo\Documents\Curso Propedeutico Maestría\Anaconda\RepositorioAnaconda>
